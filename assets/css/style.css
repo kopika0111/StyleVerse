@@ -1,0 +1,398 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f1f1;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* General Header Styles */
+.header {
+    background-color: #000; /* Black header background */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #444;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d97d4b;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: #e74c3c; /* Highlight color */
+}
+
+/* Navigation Menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure the parent nav item maintains hover state */
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    font-weight: bolder;
+    color: #d97d4b;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e74c3c;
+    border-radius: 5px;
+}
+
+/* Dropdown Styles */
+.nav-links .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Ensure it starts just below the parent */
+    left: 0;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 1000;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-links .dropdown li {
+    margin: 0;
+}
+
+/* Dropdown Links */
+.nav-links .dropdown a {
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links .dropdown a:hover {
+    color: #f8c146;
+}
+
+/* Show Dropdown on Hover */
+/* Ensure dropdown stays visible when hovered */
+.nav-links li:hover > .dropdown,
+.nav-links .dropdown:hover {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Header Icons */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-icons .icon {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.header-icons .icon:hover {
+    color: #e74c3c;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .header-icons {
+        margin-top: 10px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000; /* Black background for footer */
+    color: #fff; /* White text */
+    padding: 30px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #d97d4b; /* Highlight color for headings */
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-links,
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li,
+.social-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.social-links a:hover {
+    color: #e74c3c; /* Highlight color on hover */
+}
+
+/* Social Media Icons */
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.social-links i {
+    font-size: 18px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-links i:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    margin-top: 20px;
+    color: #aaa;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+
+#search-container {
+    display: none; /* Initially hidden */
+    /* margin-top: 10px; */
+}
+#search-box {
+    padding: 10px;
+    width: 100%;
+    margin-right: 70px;
+    max-width: 300px;
+    height: 5px;
+    border: 1px solid #1b1919;
+    border-radius: 5px;
+    background: dimgrey;
+    color: white;
+}
+
+#search-box::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 1; /* Firefox */
+  }
+
+  #search-box::-ms-input-placeholder { /* Edge 12-18 */
+    color: rgb(0, 0, 0);
+  }
+
+  #search-container {
+    position: relative;
+}
+
+#search-results {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: #333;
+}
+
+.search-item:hover {
+    background: #f8f8f8;
+}
+
+.search-thumb {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.search-name {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.search-category {
+    font-size: 12px;
+    color: #666;
+}
+
+.no-results {
+    padding: 10px;
+    color: #999;
+}
+
+  .header-profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.offer-container {
+    background-color: #ff6347; /* Tomato color for the banner */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offer-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.offer-container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.offer-container code {
+    background-color: #ffffff;
+    color: #ff6347;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.offer-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.offer-btn:hover {
+    background-color: #0056b3;
+}

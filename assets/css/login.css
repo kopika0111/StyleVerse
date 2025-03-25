@@ -1,0 +1,72 @@
+/* Updated Login Container Style with PEPPER ST. Color Palette */
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px 40px 20px 20px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff; /* Light warm gray background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6a4e42; /* Deep, rich brown for heading */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #7f6a5f; /* Muted warm brown for label text */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #6a4e42; /* Rich brown text for input fields */
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #d97d4b; /* Peppery reddish-orange for button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #a15c3b; /* Darker shade of the button color for hover effect */
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register-link a {
+    color: #d97d4b; /* Default blue for register link */
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

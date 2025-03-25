@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #6a4e42; /* Rich brown text color */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Checkout Page */
+.checkout-page {
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.checkout-page h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6a4e42; /* Rich brown for headings */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #7f6a5f; /* Muted brown for labels */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #d97d4b; /* Peppery reddish-orange for borders */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #a15c3b; /* Darker peppery shade for focus border */
+    outline: none;
+}
+
+.order-summary {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9; /* Light gray for summary box */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order-summary h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #6a4e42; /* Rich brown for the summary title */
+}
+
+.order-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.order-summary ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #7f6a5f; /* Muted brown for text in the summary */
+}
+
+.order-summary p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+    color: #d97d4b; /* Peppery reddish-orange for the total amount */
+}
+
+.error-message {
+    color: #d9534f;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #f5c6cb;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #d97d4b; /* Peppery reddish-orange for button background */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #a15c3b; /* Darker shade for hover effect */
+}
+
+.btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .checkout-page {
+        padding: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+    }
+
+    .order-summary h2 {
+        font-size: 1.2rem;
+    }
+
+    .order-summary p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}

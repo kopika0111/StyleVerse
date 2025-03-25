@@ -1,0 +1,248 @@
+/* Reset Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f3f1f1; /* Light peach */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #000; /* Deep brown */
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 12px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    color: #ff7043; /* Warm orange */
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+/* Logout */
+.logout {
+    color: #e53935 !important; /* Bold red */
+    font-weight: bold;
+}
+
+/* Navbar */
+.top-navbar {
+    background: #ff7043; /* Warm orange */
+    color: white;
+    padding: 15px;
+    text-align: right;
+    position: fixed;
+    width: calc(100% - 250px);
+    top: 0;
+    left: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    height: 60px;
+    z-index: 10;
+}
+
+.top-navbar h1 {
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.logout-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    background: #8d6e63; /* Soft brown */
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #3e2723; /* Dark brown */
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    margin-left: 250px;
+    padding: 80px 20px;
+    width: 100%;
+}
+
+/* Dashboard Metrics */
+.dashboard-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.metric-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #bcaaa4; /* Soft beige */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+}
+
+.metric-card h2 {
+    font-size: 1.2em;
+    color: #3e2723; /* Deep brown */
+    margin-bottom: 10px;
+}
+
+.metric-card p {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ff7043; /* Warm orange */
+}
+
+.metric-card i {
+    font-size: 30px;
+    color: #ff7043;
+}
+
+/* Quick Links */
+.quick-links {
+    margin-top: 40px;
+}
+
+.quick-links h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #3e2723; /* Deep brown */
+}
+
+.action-btn {
+    padding: 10px;
+    font-size: 0.9em;
+    background-color: #ff7043; /* Warm orange */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #8d6e63; /* Soft brown */
+}
+
+/* Recent Activity */
+.recent-activity {
+    margin-top: 40px;
+}
+
+.recent-activity h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #3e2723; /* Deep brown */
+}
+
+.recent-activity ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-activity ul li {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #bcaaa4; /* Soft beige */
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #6d4c41; /* Muted brown */
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .top-navbar {
+        width: calc(100% - 200px);
+        left: 200px;
+    }
+
+    .dashboard-content {
+        margin-left: 200px;
+        padding: 70px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100px;
+        text-align: center;
+    }
+
+    .sidebar h2 {
+        font-size: 18px;
+    }
+
+    .sidebar ul li a {
+        font-size: 14px;
+        justify-content: center;
+    }
+
+    .sidebar ul li a i {
+        margin-right: 0;
+    }
+
+    .top-navbar {
+        width: calc(100% - 100px);
+        left: 100px;
+        font-size: 14px;
+    }
+
+    .dashboard-content {
+        margin-left: 100px;
+        padding: 60px 5px;
+    }
+
+    .dashboard-metrics {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}

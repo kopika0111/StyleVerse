@@ -1,0 +1,77 @@
+/* General Styles */
+
+/* Container */
+.terms-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 0;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+/* Headings */
+h1, h2 {
+    color: #d97d4b; /* Orange color */
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #000; /* Light grey text */
+    text-align: left;
+    margin-left: 150px;
+}
+
+/* Links */
+a {
+    color: #d97d4b; /* Orange links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #a15c3b; /* Darker shade of the link color for hover effect */
+}
+
+
+/* Back to Homepage Button */
+.back-home {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d97d4b; /* Orange button */
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.back-home:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .terms-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,92 @@
+
+
+.container {
+    padding: 20px;
+
+}
+
+.alert {
+    color: #d97d4b; /* Peppery reddish-orange for alerts */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.category-form {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.category-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-form label {
+    font-weight: bold;
+    color: #6a4e42; /* Rich brown for labels */
+}
+
+.category-form input {
+    padding: 8px;
+    border: 1px solid #d4a373; /* Light brown for borders */
+    border-radius: 4px;
+    background-color: #fff8f0; /* Warm off-white for input background */
+    color: #6a4e42; /* Rich brown for text */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    border: 1px solid #d4a373; /* Light brown for table borders */
+    padding: 10px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #d97d4b; /* Peppery reddish-orange for header background */
+    color: white;
+    font-weight: bold;
+}
+
+.table td {
+    background-color: #fff8f0; /* Warm off-white for table cells */
+    color: #6a4e42; /* Rich brown for text */
+}
+
+.btn {
+    padding: 8px 12px;
+    background-color: #d97d4b; /* Peppery reddish-orange for buttons */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a15c3b; /* Darker peppery shade for hover */
+}
+
+.delete-btn {
+    background-color: #7c6e65; /* Classic red for delete buttons */
+}
+
+.delete-btn:hover {
+    background-color: #6b5d54; /* Darker red for hover effect */
+}
+
+.category-form button {
+    height: fit-content;
+    margin: 18px 0 0 0;
+}
+
+.success-msg {
+    color: green;
+    font-weight: bold;
+}

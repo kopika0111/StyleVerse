@@ -1,0 +1,51 @@
+/* Updated About Container Style with PEPPER ST. Color Palette */
+
+
+.about-container {
+    padding: 50px 0;
+    
+
+}
+
+.about-container .container {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.about-container h1,
+.about-container h2 {
+    color: #d97d4b; /* Deep, rich brown for headings */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+
+.about-container p {
+    color: #000; /* Muted warm brown for paragraph text */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.about-container ul li {
+    color: #000; /* Muted warm brown for list items */
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.about-container a {
+    color: #d97d4b; /* Peppery reddish orange for links */
+    text-decoration: none;
+}
+
+.about-container a:hover {
+    text-decoration: underline;
+    color: #a15c3b; /* Darker shade of the link color for hover effect */
+}

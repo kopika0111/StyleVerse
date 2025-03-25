@@ -1,0 +1,59 @@
+
+/* Container */
+.refund-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 0;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+/* Headings */
+h1, h2 {
+    color: #d97d4b; /* Orange color */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Paragraphs & List */
+p, ul {
+    line-height: 1.6;
+    margin-bottom: 15px
+    color: #000; /* Light grey text */
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Links */
+a {
+    color: #d97d4b; /* Orange links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e74c3c; /* Lighter orange on hover */
+}
+
+/* Back to Homepage Button */
+.back-home {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d97d4b; /* Orange button */
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.back-home:hover {
+    text-decoration: underline;
+    color: #a15c3b; /* Darker shade of the link color for hover effect */
+}
+
+

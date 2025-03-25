@@ -1,0 +1,111 @@
+
+.contact-container {
+    padding: 50px 0;
+}
+
+.contact-container .container {
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.contact-container h1 {
+    text-align: center;
+    color: #6a4e42; /* Rich brown for headings */
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    text-align: center;
+    color: #7f6a5f; /* Muted brown for text */
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact-container .success-message {
+    color: #4caf50; /* Green for success messages */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-container .error-message {
+    color: #d9534f; /* Red for error messages */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    background: #ffffff; /* White background for the form */
+    padding: 46px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #6a4e42; /* Rich brown for labels */
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d97d4b; /* Peppery reddish-orange for input borders */
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #a15c3b; /* Darker peppery shade for focus border */
+    outline: none;
+}
+
+.contact-form .btn {
+    display: inline-block;
+    background: #d97d4b; /* Peppery reddish-orange for buttons */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.contact-form .btn:hover {
+    background: #a15c3b; /* Darker peppery shade for hover effect */
+}
+
+.contact-info h2 {
+    color: #6a4e42; /* Rich brown for section headings */
+    margin-top: 30px;
+}
+
+.contact-info p {
+    color: #7f6a5f; /* Muted brown for informational text */
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #d97d4b; /* Peppery reddish-orange for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}

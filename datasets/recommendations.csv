@@ -1,0 +1,20 @@
+user_id,product_id,score,reason,created_at
+6,144,0.3835,"Same Category, Seasonal, Trending",2025-03-25 11:17:44
+6,146,0.2,Search Match,2025-03-25 11:17:44
+6,147,0.6287,"Content-Based, Search Match, Same Category, Seasonal, Trending",2025-03-25 11:17:44
+6,150,0.0154,,2025-03-25 11:17:44
+6,151,0.4068,"Search Match, Seasonal, Trending",2025-03-25 11:17:44
+6,161,0.2062,Search Match,2025-03-25 11:17:44
+6,168,0.265,"Content-Based, Seasonal, Trending",2025-03-25 11:17:44
+6,174,0.0111,,2025-03-25 11:17:44
+6,176,0.2062,Search Match,2025-03-25 11:17:44
+6,178,0.0437,,2025-03-25 11:17:44
+6,180,0.0154,,2025-03-25 11:17:44
+6,181,0.2,Search Match,2025-03-25 11:17:44
+6,186,0.2062,Search Match,2025-03-25 11:17:44
+6,187,0.2,Search Match,2025-03-25 11:17:44
+6,189,0.4026,"Content-Based, Same Category, Seasonal, Trending",2025-03-25 11:17:44
+6,190,0.2026,"Content-Based, Same Category",2025-03-25 11:17:44
+6,191,0.2118,Search Match,2025-03-25 11:17:44
+6,192,0.2118,Search Match,2025-03-25 11:17:44
+6,193,0.2118,Search Match,2025-03-25 11:17:44

@@ -1,0 +1,87 @@
+
+
+
+.register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px 40px 20px 20px;
+    border: 1px solid #e0c9c0; /* Light warm beige for subtle border */
+    border-radius: 5px;
+    background: #f3f1f1; /* Soft cream background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6a4e42; /* Rich brown for headings */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #6a4e42; /* Consistent warm brown for text */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d3b8aa; /* Light brown for input borders */
+    border-radius: 5px;
+    background-color: #fff; /* Subtle warm cream for input background */
+    color: #6a4e42; /* Text color to match theme */
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #d97d4b; /* Peppery reddish-orange for focus state */
+    background-color: #fff4ed; /* Slightly brighter cream for focus */
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #d97d4b; /* Peppery reddish-orange for primary button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a15c3b; /* Darker peppery shade for hover state */
+}
+
+.error-message {
+    color: #d9534f; /* Strong red for error messages */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: #27ae60; /* Green for success messages */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-link a {
+    color: #d97d4b; /* Peppery reddish-orange for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+    color: #a15c3b; /* Darker shade for hover effect */
+}

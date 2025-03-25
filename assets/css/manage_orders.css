@@ -1,0 +1,84 @@
+/* Manage Orders Table */
+
+.admin-container {
+    padding: 20px;
+}
+
+.admin-container h1 {
+    text-align: center;
+    color: #3e2723;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #ff7043;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background: #fbe9e7;
+}
+
+/* Status Labels */
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status.pending {
+    background: #ffcc80;
+    color: #6d4c41;
+}
+
+.status.processing {
+    background: #81c784;
+    color: #2e7d32;
+}
+
+.status.completed {
+    background: #64b5f6;
+    color: #1e88e5;
+}
+
+/* Action Buttons */
+.btn {
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn.view {
+    background: #42a5f5;
+}
+
+.btn.edit {
+    background: #ffb74d;
+}
+
+.btn.delete {
+    background: #e53935;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
